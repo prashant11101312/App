@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Borrower List</title>
+  </head>
+  <body>
+    <h1>Borrower List</h1>
+    <ul>
+      {% for borrower in borrowers %}
+        <li>
+          <p>Name: {{ borrower.name }}</p>
+          <p>Email: {{ borrower.email }}</p>
+          <p>Borrowed Books:</p>
+          <ul>
+            {% for book in borrower.borrowed_books %}
+              <li>
+                <p>Title: {{ book.title }}</p>
+                <p>Author: {{ book.author }}</p>
+                <p>ISBN: {{ book.isbn }}</p>
+                <p>Year: {{ book.year }}</p>
+              </li>
+            {% endfor %}
+          </ul>
+        </li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Library Management System</title>
+  </head>
+  <body>
+    <h1>Library Management System</h1>
+    <form action="/add_book" method="post">
+      <label for="title">Title:</label>
+      <input type="text" id="title" name="title"><br><br>
+      <label for="author">Author:</label>
+      <input type="text" id="author" name="author"><br><br>
+      <label for="isbn">ISBN:</label>
+      <input type="text" id="isbn" name="isbn"><br><br>
+      <label for="year">Year:</label>
+      <input type="text" id="year" name="year"><br><br>
+      <input type="submit" value="Add Book">
+    </form>
+    <form action="/remove_book" method="post">
+      <label for="isbn">ISBN:</label>
+      <input type="text" id="isbn" name="isbn"><br><br>
+      <input type="submit" value="Remove Book">
+    </form>
+    <form action="/search_book" method="post">
+      <label for="title">Title:</label>
+      <input type="text" id="title" name="title"><br><br>
+      <input type="submit" value="Search Book">
+    </form>
+    <form action="/add_borrower" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name"><br><br>
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email"><br><br>
+      <input type="submit" value="Add Borrower">
+    </form>
+    <form action="/remove_borrower" method="post
